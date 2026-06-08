@@ -19,7 +19,7 @@ ENV UV_COMPILE_BYTECODE=1 \
 
 # Clone and install mealie-mcp-server from GitHub repository
 # Using update-api-implementation branch for latest API updates
-RUN git clone --branch update-api-implementation --single-branch https://github.com/ericfri/mealie-mcp-server.git /app && \
+RUN git clone --branch main --single-branch https://github.com/ericfri/mealie-mcp-server.git /app && \
     uv sync --locked && \
     chown -R nonroot:nonroot /app
 
